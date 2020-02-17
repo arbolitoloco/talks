@@ -2,67 +2,175 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>reveal.js</title>
+  <title>reveal.js</title>
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/black.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/black.css">
 
-    <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/monokai.css">
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/monokai.css">
 
-    <!-- Printing and PDF exports -->
-    <script>
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-        document.getElementsByTagName('head')[0].appendChild(link);
-    </script>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
 </head>
 
 <body>
-    <div class="reveal">
-        <div class="slides">
-            <section>
-                <p style="font-size:smaller">Terrestrial Parasite Tracker Workshop: Best Practices and Standardization of Digital Data Capture</p>
-                <p style="font-size:smaller">Chicago, February 2020</p>
-                <h1>The NEON Biorepository</h1>
-                <p>Laura Rocha Prado</p>
-                <p>Arizona State University</p>
-            </section>
-            <section>Who am I?</section>
-            <section>NEON</section>
-            <section>The NEON Biorepository</section>
-            <section>Team</section>
-            <section>Symbiota</section>
-            <section>SCAN</section>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Title frame -->
+      <section>
+        <p style="font-size:smaller">Terrestrial Parasite Tracker TCN Workshop: Best Practices and Standardization of Digital Data Capture</p>
+        <p style="font-size:smaller">Chicago, February 2020</p>
+        <h1>NEON Biorepository</h1>
+        <p>Laura Rocha Prado</p>
+        <p>Arizona State University</p>
+        <div id="title-logos">NSF/NEON, ASU</div>
+      </section>
+
+      <!-- NEON -->
+      <section>
+        <h1>NEON</h1>
+      </section>
+
+      <!-- 1 -->
+      <section>
+        <blockquote cite="https://www.nsf.gov/news/special_reports/neon/" style="font-size: 0.8em">The National Ecological Observatory Network (NEON) is a large facility project funded by the National Science Foundation (NSF). NEON is a continental-scale platform for ecological research. The observatory will gather long-term data to enable
+          fundamental research on biological responses to shifting environmental conditions, land-use changes, and invasive species.</blockquote>
+        <p><a href="https://www.nsf.gov/news/special_reports/neon/">NSF News</a></p>
+        <ul>
+          <li>Operated by Battelle</li>
+          <li>ASU as subcontractor</li>
+        </ul>
+      </section>
+      <!-- 2 -->
+      <section data-background-image="images/kmyule-neon.jpg" data-background-size="contain">
+      </section>
+      <!-- 3 -->
+      <section data-background-image="images/kmyule-neon-colls.png" data-background-size="contain">
+      </section>
+      <!-- 4 -->
+      <!-- NEON @ NSF News -->
+      <section data-background-image="images/nsf-neon-site.png" data-background-position="top">
+        <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+          <h2>NEON</h2>
+          <p>NSF News overview</p>
         </div>
+      </section>
+      <!-- 5 -->
+      <!-- neonscience.org -->
+      <section data-background-image="images/neonscience-site.png" data-background-position="top">
+        <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+          <h2>NEON</h2>
+          <p>Main portal (managed by Battelle): <a href="http://www.neonscience.org/">https://www.neonscience.org/</a></p>
+        </div>
+      </section>
+      <!-- 6 -->
+      <!-- data.neonscience.org -->
+      <section data-background-image="images/data-neonscience-site.png" data-background-position="top">
+        <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+          <h2>NEON Data Portal</h2>
+          <p>Data portal (managed by Battelle): <a href="http://data.neonscience.org/">https://www.neonscience.org/</a></p>
+        </div>
+      </section>
+      <!-- 7 -->
+      <!-- NEON Biorepository -->
+      <section>
+        <h2>NEON Biorepository</h2>
+      </section>
+      <!-- 8 -->
+      <!-- What we do -->
+      <section data-background-image="images/kmyule-neon-biorepo.jpg" data-background-size="contain">
+      </section>
+      <!-- 9 -->
+      <!-- Physical specimens and their data -->
+      <section>
+        <h3>Biorepository:</h3>
+        <p>Samples and Data</p>
+      </section>
+      <!-- 10 -->
+      <!-- Biocollections -->
+      <section>
+        <ul>
+          <li>over 100,000 samples every year</li>
+          <li>over 40 "sample classes"</li>
+          <li>data in biorepo as "collections"</li>
+        </ul>
+      </section>
+      <!-- 11 -->
+      <!-- Team -->
+      <!-- 12 -->
+      <!-- Samples and sample classes -->
+      <!-- 13 -->
+      <!-- biorepo.neonscience.org -->
+      <section data-background-image="images/biorepo-neonscience-site.png" data-background-position="top">
+        <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+          <h2>Biorepository</h2>
+          <p>Biorepo portal (ASU): <a href="http://biorepo.neonscience.org/">https://www.neonscience.org/</a></p>
+        </div>
+      </section>
+      <!-- 14 -->
+      <!-- Collections -->
+      <section>
+        <h2>Collections</h2>
+        Bycatch Mosquitos DNA extracts Aquatic bulk Tick data
+      </section>
+      <!-- 15 -->
+      <!-- Symbiota Section -->
+      <section>
+        <section>
+          <h2>Symbiota</h2>
+          Interesting Features Parent-Child relationship
+        </section>
+        <section>
+          associatedTaxa in omoccurrences table: verbatim scinames (list), host:, etc. this can be edited in: https://serv.biokic.asu.edu/sandbox/collections/editor/occurrenceeditor.php; 'Associated Taxa'. Record-based.
+        </section>
+        <section>Trait Module: Phenology example. Trait mining with the Occurrence Trait Coding Tools Occurrence Association Manager (https://serv.biokic.asu.edu/sandbox/collections/misc/assocmanagement.php?collid=1) will mine traits from fields in occurrences
+          and add them to the table omoccurrassociations.</section>
+        <section>Table omoccurrassociations has: hard association (specimen/specimen in same system), relationship (define type of relationship), association with specimen in another db (resourceurl), verbatimsciname, verify names by indexing in internal thesaurus,
+          verify through external source, dynamicProperties (could hold all that information if they'd like).</section>
+        <section></section>
+        <section>
+          <h2>Sandbox</h2>
+        </section>
+        <!--  -->
+        <section>
+          <h2>SCAN</h2>
+          Moving from TACC to ASU (March 2020) Evin Dunn and Neil Cobb Long-term support from ASU (hosting/co-management) Ecdysis
+        </section>
+        <!--  -->
     </div>
+  </div>
 
-    <script src="js/reveal.js"></script>
+  <script src="js/reveal.js"></script>
 
-    <script>
-        // More info about config & dependencies:
-        // - https://github.com/hakimel/reveal.js#configuration
-        // - https://github.com/hakimel/reveal.js#dependencies
-        Reveal.initialize({
-            hash: true,
-            dependencies: [{
-                src: 'plugin/markdown/marked.js'
-            }, {
-                src: 'plugin/markdown/markdown.js'
-            }, {
-                src: 'plugin/highlight/highlight.js'
-            }, {
-                src: 'plugin/notes/notes.js',
-                async: true
-            }]
-        });
-    </script>
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      hash: true,
+      dependencies: [{
+        src: 'plugin/markdown/marked.js'
+      }, {
+        src: 'plugin/markdown/markdown.js'
+      }, {
+        src: 'plugin/highlight/highlight.js'
+      }, {
+        src: 'plugin/notes/notes.js',
+        async: true
+      }]
+    });
+  </script>
 </body>
 
 </html>
