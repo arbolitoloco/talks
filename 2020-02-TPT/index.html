@@ -29,12 +29,12 @@
     <div class="slides">
       <!-- Title frame -->
       <section>
-        <p style="font-size:smaller">Terrestrial Parasite Tracker TCN Workshop: Best Practices and Standardization of Digital Data Capture</p>
-        <p style="font-size:smaller">Chicago, February 2020</p>
-        <h1>NEON Biorepository</h1>
-        <p>Laura Rocha Prado</p>
-        <p>Arizona State University</p>
-        <div id="title-logos">NSF/NEON, ASU</div>
+        <p style="font-size: 0.5em">Terrestrial Parasite Tracker TCN Workshop: Best Practices and Standardization of Digital Data Capture</p>
+        <p style="font-size: 0.5em">Chicago, February 2020</p>
+        <h1>The NEON Biorepository</h1>
+        <p style="font-size: 0.8em">Laura Rocha Prado</p>
+        <p style="font-size: 0.8em">Arizona State University</p>
+        <div id="title-logos"><img src="images/nsf-neon.png" alt="NSF and NEON logos" height="100px" class="plain" style="margin: 0 1em"><img src="images/asu_biodiversityknowledge_horiz_rgb_white_150ppi.png" alt="ASU BioKIC logo" height="100px" class="plain" style="margin: 0 1em"></div>
       </section>
 
       <!-- NEON -->
@@ -99,12 +99,12 @@
       </section>
       <!-- 10 -->
       <!-- Biocollections -->
-      <section>
-        <ul>
-          <li>over 100,000 samples every year</li>
-          <li>over 40 "sample classes"</li>
-          <li>data in biorepo as "collections"</li>
-        </ul>
+      <!-- biorepo-main-graphs-2019-12-09.jpg -->
+      <section data-background-image="images/biorepo-main-graphs-2019-12-09.jpg" data-background-size="contain">
+        <div class="fragment" style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+          <h2>100k samples/year</h2>
+          <p>40 sample classes/"collections"</p>
+        </div>
       </section>
       <!-- 11 -->
       <!-- We are here -->
@@ -114,7 +114,7 @@
       <section data-background-image="images/biorepo-neonscience-site.png" data-background-position="top">
         <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
           <h2>Biorepository</h2>
-          <p>Biorepo portal (ASU): <a href="http://biorepo.neonscience.org/">https://www.neonscience.org/</a></p>
+          <p>Biorepo portal (ASU): <a href="http://biorepo.neonscience.org/">https://biorepo.neonscience.org/</a></p>
         </div>
       </section>
       <!-- 13 -->
@@ -126,6 +126,11 @@
       <!-- 15 -->
       <!-- Collections -->
       <section data-background-image="images/biorepo-search-invertebrates-scroll.gif" data-background-position="top">
+        <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+          <h2>Collections</h2>
+          <p>Sample Classes</a>
+          </p>
+        </div>
       </section>
       <!-- 16 -->
       <!-- Symbiota Section -->
@@ -133,23 +138,83 @@
         <h2>Symbiota</h2>
         Built-in tools to harvest parasitical relationships from existing portals
       </section>
+      <!-- 17 -->
       <section>
-        associatedTaxa in omoccurrences table: verbatim scinames (list), host:, etc. this can be edited in: https://serv.biokic.asu.edu/sandbox/collections/editor/occurrenceeditor.php; 'Associated Taxa'. Record-based.
+        <h2>Record-based</h2>
+        <p>Field <span style="font-style: italic;">associatedTaxa</span> in <span style="font-style: italic;">omoccurrences</span></p>
+        <ul>
+          <li>Verbatim scientific names</li>
+          <li>Can contain comments</li>
+          <li>Example usage: Dermatobia hominis "Parasitizes: Homo sapiens"; Homo sapiens "Is parasitized by: Dermatobia hominis"</li>
+          <li>Can be added directly to <a href="https://serv.biokic.asu.edu/sandbox/collections/editor/occurrenceeditor.php">occurrence editor</a></li>
+        </ul>
       </section>
-      <section>Trait Module: Phenology example. Trait mining with the Occurrence Trait Coding Tools Occurrence Association Manager (https://serv.biokic.asu.edu/sandbox/collections/misc/assocmanagement.php?collid=1) will mine traits from fields in occurrences and
-        add them to the table omoccurrassociations.</section>
-      <section>Table omoccurrassociations has: hard association (specimen/specimen in same system), relationship (define type of relationship), association with specimen in another db (resourceurl), verbatimsciname, verify names by indexing in internal thesaurus,
-        verify through external source, dynamicProperties (could hold all that information if they'd like).</section>
-      <section></section>
+      <!-- 18 -->
+      <section data-background-image="images/sandbox-occ-list.png">
+        <div style="position: absolute; width: 40%; left: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+          <h2>Record-based</h2>
+          <p>Find a record to edit</p>
+        </div>
+      </section>
+      <!-- 19 -->
+      <section data-background-image="images/sandbox-occ-editor.png">
+        <div style="position: absolute; width: 40%; left: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+          <h2>Occurrence Editor</h2>
+          <p>Associated Taxa</p>
+        </div>
+      </section>
+      <!-- 20 -->
       <section>
-        <h2>Sandbox</h2>
+        <h2>Harvesting Associated Taxa</h2>
+        <p>From Symbiota portals that record the associated taxa</p>
+        <!-- <video controls width="300" style="margin-top: 1em" preload>
+                <source src="videos/media.io_Symbiota-Sandbox-Export-AssociatedTaxa-NOT-NULL.mp4" type="video/mp4">
+                </video> -->
       </section>
-      <!--  -->
+      <!-- 21 -->
+      <section data-background-image="images/sandbox-dwc-export-associatedTaxa.png" data-background-position="top">
+        <div style="position: absolute; width: 40%; left: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+          <h2>Exported Occurrences</h2>
+          <p><span style="font-style: italic;">scientificName</span> + <span style="font-style: italic;">associatedTaxa</span></p>
+        </div>
+      </section>
+      <!-- 22 -->
+      <section data-background-image="images/sandbox-occ-assoc-mgmt.png" data-background-position="top">
+        <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+          <h2>Mining within the portal</h2>
+          <a href="https://serv.biokic.asu.edu/sandbox/collections/misc/assocmanagement.php?collid=1">Occurrence Association Manager</a>
+          <p>Data from <span style="font-style: italic;">associatedTaxa</span> is compiled in table <span style="font-style: italic;">omoccurrassociations</span></p>
+        </div>
+      </section>
+      <!-- sandbox-occ-assoc-mgmt.png -->
+      <!-- <section>Trait Module: Phenology example. Trait mining with the Occurrence Trait Coding Tools Occurrence Association Manager (https://serv.biokic.asu.edu/sandbox/collections/misc/assocmanagement.php?collid=1) will mine traits from fields in occurrences and
+        add them to the table omoccurrassociations.</section> -->
+      <!-- 23 -->
+      <!-- <section>Table omoccurrassociations has: hard association (specimen/specimen in same system), relationship (define type of relationship), association with specimen in another db (resourceurl), verbatimsciname, verify names by indexing in internal thesaurus,
+        verify through external source, dynamicProperties (could hold all that information if they'd like).</section> -->
+      <!-- 24 -->
       <section>
         <h2>SCAN</h2>
-        Moving from TACC to ASU (March 2020) Evin Dunn and Neil Cobb Long-term support from ASU (hosting/co-management) Ecdysis
+        <ul>
+          <li>Moving from TACC to ASU (March 2020)</li>
+          <li>Neil Cobb; Evin Dunn</li>
+          <li>Long-term support from ASU (hosting/co-management</li>
+        </ul>
       </section>
-      <!--  -->
+      <!-- 25 -->
+      <!-- Ecdysis -->
+      <section data-background-image="images/ecdysis-home.png" data-background-position="top">
+        <div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+          <h2>In the meantime...</h2>
+          <p>ASU Live-managed collections</p>
+        </div>
+      </section>
+      <!-- Thank you -->
+      <section>
+        <h1>Thank you!</h1>
+        <h4>Symbiota customizations, data exports, NEON samples</h4>
+        <p>lauraprado@asu.edu</p>
+      </section>
     </div>
   </div>
 
